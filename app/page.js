@@ -457,351 +457,470 @@
 
 
 
-import Navbar from './navbar'
+// import Navbar from './navbar'
+
+// export default function Home() {
+//   return (
+//     <>
+//       <Navbar />
+
+//       <main>
+
+//         {/* ================= HERO ================= */}
+
+//         <section id="home" className="hero">
+
+//           <div className="hero-content">
+
+//             <p className="hero-intro">
+//               Hello, I'm
+//             </p>
+
+//             <h1>
+//                <span>Sinchana</span>
+//             </h1>
+
+//             <h2>
+//               Full Stack Developer
+//             </h2>
+
+//             <p className="hero-description">
+//               I build modern, responsive and user-friendly
+//               websites and applications using modern web
+//               technologies.
+//             </p>
+//             <div className="hero-buttons">
+//               <a
+//                 href="#projects"
+//                 className="button primary-button"
+//               >
+//                 View My Work
+//               </a>
+//               <a
+//                 href="#contact"
+//                 className="button secondary-button"
+//               >
+//                 Contact Me
+//               </a>
+//             </div>
+//             <div className="social-links">
+//               <a
+//                 href="https://github.com/"
+//                 target="_blank"
+//                 rel="noreferrer"
+//               >
+//                 GitHub
+//               </a>
+//               <a
+//                 href="https://linkedin.com/"
+//                 target="_blank"
+//                 rel="noreferrer"
+//               >
+//                 LinkedIn
+//               </a>
+//               <a href="mailto:youremail@example.com">
+//                 Email
+//               </a>
+//             </div>
+//           </div>
+//           <div className="hero-image-container">
+//             <div className="glow-circle"></div>
+//             <div className="hero-image">
+//               <img
+//                 src="/profile.jpg"
+//                 alt="Your Name"
+//               />
+//             </div>
+//           </div>
+//         </section>
+//         {/* ================= ABOUT ================= */}
+//         <section id="about" className="section">
+//           <div className="section-heading">
+//             <p>GET TO KNOW ME</p>
+//             <h2>
+//               About <span>Me</span>
+//             </h2>
+//           </div>
+//           <div className="about-container">
+//             <div className="about-text">
+//               <h3>
+//                 Turning ideas into digital experiences.
+//               </h3>
+//               <p>
+//                 I'm a passionate developer who enjoys creating
+//                 modern websites and applications.
+//               </p>
+//               <p>
+//                 I love learning new technologies and solving
+//                 problems through clean and efficient code.
+//               </p>
+//               <p>
+//                 My goal is to build applications that are not
+//                 only functional but also enjoyable to use.
+//               </p>
+//             </div>
+//             <div className="about-cards">
+
+//               <div className="about-card">
+//                 <h3>01</h3>
+//                 <p>Clean Code</p>
+//               </div>
+
+//               <div className="about-card">
+//                 <h3>02</h3>
+//                 <p>Responsive Design</p>
+//               </div>
+
+//               <div className="about-card">
+//                 <h3>03</h3>
+//                 <p>Problem Solving</p>
+//               </div>
+
+//               <div className="about-card">
+//                 <h3>04</h3>
+//                 <p>Continuous Learning</p>
+//               </div>
+
+//             </div>
+
+//           </div>
+
+//         </section>
+
+
+//         {/* ================= SKILLS ================= */}
+
+//         <section id="skills" className="section skills-section">
+
+//           <div className="section-heading">
+
+//             <p>MY TECHNOLOGIES</p>
+
+//             <h2>
+//               My <span>Skills</span>
+//             </h2>
+
+//           </div>
+
+
+//           <div className="skills-grid">
+
+//             <div className="skill-card">
+//               <span>01</span>
+//               <h3>HTML</h3>
+//               <p>Semantic and accessible web structure.</p>
+//             </div>
+
+//             <div className="skill-card">
+//               <span>02</span>
+//               <h3>CSS</h3>
+//               <p>Responsive and modern visual design.</p>
+//             </div>
+
+//             <div className="skill-card">
+//               <span>03</span>
+//               <h3>JavaScript</h3>
+//               <p>Interactive and dynamic applications.</p>
+//             </div>
+
+//             <div className="skill-card">
+//               <span>04</span>
+//               <h3>React</h3>
+//               <p>Reusable component-based interfaces.</p>
+//             </div>
+
+//             <div className="skill-card">
+//               <span>05</span>
+//               <h3>Next.js</h3>
+//               <p>Modern full-stack React applications.</p>
+//             </div>
+
+//             <div className="skill-card">
+//               <span>06</span>
+//               <h3>Node.js</h3>
+//               <p>Backend APIs and server-side applications.</p>
+//             </div>
+
+//             <div className="skill-card">
+//               <span>07</span>
+//               <h3>MongoDB</h3>
+//               <p>Database design and data management.</p>
+//             </div>
+
+//             <div className="skill-card">
+//               <span>08</span>
+//               <h3>Git</h3>
+//               <p>Version control and project collaboration.</p>
+//             </div>
+
+//           </div>
+
+//         </section>
+
+
+//         {/* ================= PROJECTS ================= */}
+
+//         <section id="projects" className="section">
+
+//           <div className="section-heading">
+
+//             <p>MY RECENT WORK</p>
+
+//             <h2>
+//               Featured <span>Projects</span>
+//             </h2>
+
+//           </div>
+
+
+//           <div className="projects-grid">
+
+//             <article className="project-card">
+
+//               <div className="project-number">
+//                 01
+//               </div>
+
+//               <h3>
+//                 E-Commerce Website
+//               </h3>
+
+//               <p>
+//                 A responsive e-commerce website with product
+//                 listings, shopping cart and modern user interface.
+//               </p>
+
+//               <div className="project-tags">
+//                 <span>React</span>
+//                 <span>JavaScript</span>
+//                 <span>CSS</span>
+//               </div>
+
+//               <a href="#">
+//                 View Project →
+//               </a>
+
+//             </article>
+
+
+//             <article className="project-card">
+
+//               <div className="project-number">
+//                 02
+//               </div>
+
+//               <h3>
+//                 Task Management App
+//               </h3>
+
+//               <p>
+//                 A productivity application for managing tasks,
+//                 deadlines and daily activities.
+//               </p>
+
+//               <div className="project-tags">
+//                 <span>Next.js</span>
+//                 <span>Node.js</span>
+//                 <span>MongoDB</span>
+//               </div>
+
+//               <a href="#">
+//                 View Project →
+//               </a>
+
+//             </article>
+
+
+//             <article className="project-card">
+
+//               <div className="project-number">
+//                 03
+//               </div>
+
+//               <h3>
+//                 Portfolio Website
+//               </h3>
+
+//               <p>
+//                 A modern personal portfolio designed to showcase
+//                 skills, projects and professional experience.
+//               </p>
+
+//               <div className="project-tags">
+//                 <span>Next.js</span>
+//                 <span>React</span>
+//                 <span>CSS</span>
+//               </div>
+
+//               <a href="#">
+//                 View Project →
+//               </a>
+
+//             </article>
+
+//           </div>
+
+//         </section>
+
+
+//         {/* ================= CONTACT ================= */}
+
+//         <section id="contact" className="contact-section">
+
+//           <p className="contact-small">
+//             HAVE A PROJECT IN MIND?
+//           </p>
+
+//           <h2>
+//             Let's Work <span>Together.</span>
+//           </h2>
+
+//           <p className="contact-description">
+//             I'm always open to discussing new projects,
+//             creative ideas or opportunities.
+//           </p>
+
+//           <a
+//             href="mailto:youremail@example.com"
+//             className="button primary-button"
+//           >
+//             Get In Touch
+//           </a>
+
+//         </section>
+
+//       </main>
+
+
+//       {/* ================= FOOTER ================= */}
+
+//       <footer>
+
+//         <p>
+//           © 2026 Your Name. All rights reserved.
+//         </p>
+
+//       </footer>
+
+//     </>
+//   )
+// }
+
+// import ProductCard from "./productCard";
+
+// export default function Home() {
+//     return (
+//         <div>
+//             <ProductCard />
+//         </div>
+//     );
+// }
+
+// import Fetchdata from './Fetchdata'
+// export default function Home(){
+//   return(
+//     <>
+//     Fetchdata
+//     </>
+//   );
+// }
+// import FetchData from "./Fetchdata"
+
+// export default function Home() {
+//     return (
+//         <>
+//             <FetchData />
+//         </>
+//     );
+// "user client"
+// import{useState} from "react";
+// //import Navbar from "../app/Components/Navbar";
+// //import userDetails from "../app/Components/UserDetails";
+// //import {useState} from "react";
+// import ProductCard from "./productCard";
+// export default function page(){
+//     const[name,setName]=useState("Sinchana");
+//     return(
+//         <div>
+//             {/* <h1>Welcome to the home page</h1> */}
+//             <FetchData />
+//             {/* <UserDetails/>          */}
+//         </div>
+//     );
+// }
+// import Fetchdata from './Fetchdata'
+// export default function Home(){
+//   return(
+//     <>
+//     Fetchdata
+//     </>
+//   );
+// }
+"use client";
+
+import { useState } from "react";
 
 export default function Home() {
+  const [active, setActive] = useState("Home");
+
   return (
-    <>
-      <Navbar />
+    <div className="main">
 
-      <main>
+      <header>
+        <h2>CleanCity</h2>
 
-        {/* ================= HERO ================= */}
+        <nav>
+          <button onClick={() => setActive("Home")}>Home</button>
+          <button onClick={() => setActive("About")}>About</button>
+          <button onClick={() => setActive("Login")}>Login</button>
+        </nav>
+      </header>
 
-        <section id="home" className="hero">
+      <div className="content">
 
-          <div className="hero-content">
+        {active === "Home" && (
+          <section className="home">
+            <h1>A Cleaner City Starts With You!</h1>
+            <p>
+              Keep our surroundings clean and make our city
+              a better place to live.
+            </p>
+            <h3>Reduce Waste. Reuse More. Recycle Better.</h3>
+          </section>
+        )}
 
-            <p className="hero-intro">
-              Hello, I'm
+        {active === "About" && (
+          <section className="about">
+            <h1>About Us</h1>
+            <p>
+              CleanCity is a waste management system that
+              encourages people to keep their surroundings clean.
             </p>
 
-            <h1>
-               <span>Sinchana</span>
-            </h1>
-
-            <h2>
-              Full Stack Developer
-            </h2>
-
-            <p className="hero-description">
-              I build modern, responsive and user-friendly
-              websites and applications using modern web
-              technologies.
-            </p>
-            <div className="hero-buttons">
-              <a
-                href="#projects"
-                className="button primary-button"
-              >
-                View My Work
-              </a>
-              <a
-                href="#contact"
-                className="button secondary-button"
-              >
-                Contact Me
-              </a>
-            </div>
-            <div className="social-links">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
-              <a
-                href="https://linkedin.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn
-              </a>
-              <a href="mailto:youremail@example.com">
-                Email
-              </a>
-            </div>
-          </div>
-          <div className="hero-image-container">
-            <div className="glow-circle"></div>
-            <div className="hero-image">
-              <img
-                src="/profile.jpg"
-                alt="Your Name"
-              />
-            </div>
-          </div>
-        </section>
-        {/* ================= ABOUT ================= */}
-        <section id="about" className="section">
-          <div className="section-heading">
-            <p>GET TO KNOW ME</p>
-            <h2>
-              About <span>Me</span>
-            </h2>
-          </div>
-          <div className="about-container">
-            <div className="about-text">
-              <h3>
-                Turning ideas into digital experiences.
-              </h3>
-              <p>
-                I'm a passionate developer who enjoys creating
-                modern websites and applications.
-              </p>
-              <p>
-                I love learning new technologies and solving
-                problems through clean and efficient code.
-              </p>
-              <p>
-                My goal is to build applications that are not
-                only functional but also enjoyable to use.
-              </p>
-            </div>
-            <div className="about-cards">
-
-              <div className="about-card">
-                <h3>01</h3>
-                <p>Clean Code</p>
-              </div>
-
-              <div className="about-card">
-                <h3>02</h3>
-                <p>Responsive Design</p>
-              </div>
-
-              <div className="about-card">
-                <h3>03</h3>
-                <p>Problem Solving</p>
-              </div>
-
-              <div className="about-card">
-                <h3>04</h3>
-                <p>Continuous Learning</p>
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
-
-
-        {/* ================= SKILLS ================= */}
-
-        <section id="skills" className="section skills-section">
-
-          <div className="section-heading">
-
-            <p>MY TECHNOLOGIES</p>
-
-            <h2>
-              My <span>Skills</span>
-            </h2>
-
-          </div>
-
-
-          <div className="skills-grid">
-
-            <div className="skill-card">
-              <span>01</span>
-              <h3>HTML</h3>
-              <p>Semantic and accessible web structure.</p>
-            </div>
-
-            <div className="skill-card">
-              <span>02</span>
-              <h3>CSS</h3>
-              <p>Responsive and modern visual design.</p>
-            </div>
-
-            <div className="skill-card">
-              <span>03</span>
-              <h3>JavaScript</h3>
-              <p>Interactive and dynamic applications.</p>
-            </div>
-
-            <div className="skill-card">
-              <span>04</span>
-              <h3>React</h3>
-              <p>Reusable component-based interfaces.</p>
-            </div>
-
-            <div className="skill-card">
-              <span>05</span>
-              <h3>Next.js</h3>
-              <p>Modern full-stack React applications.</p>
-            </div>
-
-            <div className="skill-card">
-              <span>06</span>
-              <h3>Node.js</h3>
-              <p>Backend APIs and server-side applications.</p>
-            </div>
-
-            <div className="skill-card">
-              <span>07</span>
-              <h3>MongoDB</h3>
-              <p>Database design and data management.</p>
-            </div>
-
-            <div className="skill-card">
-              <span>08</span>
-              <h3>Git</h3>
-              <p>Version control and project collaboration.</p>
-            </div>
-
-          </div>
-
-        </section>
-
-
-        {/* ================= PROJECTS ================= */}
-
-        <section id="projects" className="section">
-
-          <div className="section-heading">
-
-            <p>MY RECENT WORK</p>
-
-            <h2>
-              Featured <span>Projects</span>
-            </h2>
-
-          </div>
-
-
-          <div className="projects-grid">
-
-            <article className="project-card">
-
-              <div className="project-number">
-                01
-              </div>
-
-              <h3>
-                E-Commerce Website
-              </h3>
-
-              <p>
-                A responsive e-commerce website with product
-                listings, shopping cart and modern user interface.
-              </p>
-
-              <div className="project-tags">
-                <span>React</span>
-                <span>JavaScript</span>
-                <span>CSS</span>
-              </div>
-
-              <a href="#">
-                View Project →
-              </a>
-
-            </article>
-
-
-            <article className="project-card">
-
-              <div className="project-number">
-                02
-              </div>
-
-              <h3>
-                Task Management App
-              </h3>
-
-              <p>
-                A productivity application for managing tasks,
-                deadlines and daily activities.
-              </p>
-
-              <div className="project-tags">
-                <span>Next.js</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
-              </div>
-
-              <a href="#">
-                View Project →
-              </a>
-
-            </article>
-
-
-            <article className="project-card">
-
-              <div className="project-number">
-                03
-              </div>
-
-              <h3>
-                Portfolio Website
-              </h3>
-
-              <p>
-                A modern personal portfolio designed to showcase
-                skills, projects and professional experience.
-              </p>
-
-              <div className="project-tags">
-                <span>Next.js</span>
-                <span>React</span>
-                <span>CSS</span>
-              </div>
-
-              <a href="#">
-                View Project →
-              </a>
-
-            </article>
-
-          </div>
-
-        </section>
-
-
-        {/* ================= CONTACT ================= */}
-
-        <section id="contact" className="contact-section">
-
-          <p className="contact-small">
-            HAVE A PROJECT IN MIND?
-          </p>
-
-          <h2>
-            Let's Work <span>Together.</span>
-          </h2>
-
-          <p className="contact-description">
-            I'm always open to discussing new projects,
-            creative ideas or opportunities.
-          </p>
-
-          <a
-            href="mailto:youremail@example.com"
-            className="button primary-button"
-          >
-            Get In Touch
-          </a>
-
-        </section>
-
-      </main>
-
-
-      {/* ================= FOOTER ================= */}
-
-      <footer>
-
-        <p>
-          © 2026 Your Name. All rights reserved.
-        </p>
-
-      </footer>
-
-    </>
-  )
+            <h3>Our Objectives</h3>
+            <ul>
+              <li>Reduce waste in our surroundings.</li>
+              <li>Promote waste segregation.</li>
+              <li>Encourage recycling and reuse.</li>
+              <li>Create a cleaner environment.</li>
+            </ul>
+          </section>
+        )}
+
+        {active === "Login" && (
+          <section className="login">
+            <h1>Login</h1>
+            <p>Welcome to CleanCity</p>
+
+            <form>
+              <input type="text" placeholder="Enter Username" />
+              <input type="password" placeholder="Enter Password" />
+              <button type="button">Login</button>
+            </form>
+          </section>
+        )}
+
+      </div>
+    </div>
+  );
 }

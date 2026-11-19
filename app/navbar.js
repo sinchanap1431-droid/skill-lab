@@ -43,52 +43,59 @@
 // }
 
 
-'use client'
+// 'use client'
 
-import { useState } from 'react'
+// import { useState } from 'react'
 
-export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false)
+// export default function Navbar() {
+//   const [menuOpen, setMenuOpen] = useState(false)
 
-  const closeMenu = () => {
-    setMenuOpen(false)
-  }
+//   const closeMenu = () => {
+//     setMenuOpen(false)
+//   }
 
-  return (
-    <nav className="navbar">
-      <a href="#home" className="logo" onClick={closeMenu}>
-        &lt;YourName /&gt;
-      </a>
+//   return (
+//     <nav className="navbar">
+//       <a href="#home" className="logo" onClick={closeMenu}>
+//         &lt;YourName /&gt;
+//       </a>
 
-      <button
-        className="menu-button"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle navigation menu"
-      >
-        {menuOpen ? '✕' : '☰'}
-      </button>
+//       <button
+//         className="menu-button"
+//         onClick={() => setMenuOpen(!menuOpen)}
+//         aria-label="Toggle navigation menu"
+//       >
+//         {menuOpen ? '✕' : '☰'}
+//       </button>
 
-      <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
-        <a href="#home" onClick={closeMenu}>
-          Home
-        </a>
+//       <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
+//         <a href="#home" onClick={closeMenu}>
+//           Home
+//         </a>
 
-        <a href="#about" onClick={closeMenu}>
-          About
-        </a>
+//         <a href="#about" onClick={closeMenu}>
+//           About
+//         </a>
 
-        <a href="#skills" onClick={closeMenu}>
-          Skills
-        </a>
+//         <a href="#skills" onClick={closeMenu}>
+//           Skills
+//         </a>
 
-        <a href="#projects" onClick={closeMenu}>
-          Projects
-        </a>
+//         <a href="#projects" onClick={closeMenu}>
+//           Projects
+//         </a>
 
-        <a href="#contact" onClick={closeMenu}>
-          Contact
-        </a>
-      </div>
-    </nav>
-  )
-}
+//         <a href="#contact" onClick={closeMenu}>
+//           Contact
+//         </a>
+//       </div>
+//     </nav>
+//   )
+// }
+
+// export default function Navbar(){
+//  return( <>
+//   <h1>welcome to navbar</h1>
+//   <h2>this is the navbar</h2>
+//   </>
+// )}

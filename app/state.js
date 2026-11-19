@@ -56,31 +56,31 @@
 //     )
 // }
 
-"use client"
-import { useState } from "react"
+// "use client"
+// import { useState } from "react"
 
-export default function State() {
-    const [wishlist, setWishlist] = useState(false)
+// export default function State() {
+//     const [wishlist, setWishlist] = useState(false)
 
-    function toggleWishlist() {
-        setWishlist(!wishlist)
-    }
+//     function toggleWishlist() {
+//         setWishlist(!wishlist)
+//     }
 
-    return (
-        <>
-            <h2>Product Wishlist</h2>
+//     return (
+//         <>
+//             <h2>Product Wishlist</h2>
 
-            <h3>Product: Wireless Headphones</h3>
-            <p>Details: Bluetooth headphones with good sound quality.</p>
-            <p>Price: ₹999</p>
+//             <h3>Product: Wireless Headphones</h3>
+//             <p>Details: Bluetooth headphones with good sound quality.</p>
+//             <p>Price: ₹999</p>
 
-            <button onClick={toggleWishlist}>
-                {wishlist ? " Added to Wishlist" : " Add to Wishlist"}
-            </button>
+//             <button onClick={toggleWishlist}>
+//                 {wishlist ? " Added to Wishlist" : " Add to Wishlist"}
+//             </button>
 
-            <p>
-                Current Wishlist Status: {wishlist ? "Added" : "Not Added"}
-            </p>
-        </>
-    )
-}
+//             <p>
+//                 Current Wishlist Status: {wishlist ? "Added" : "Not Added"}
+//             </p>
+//         </>
+//     )
+// }
